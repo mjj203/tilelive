@@ -32,20 +32,19 @@
     "Blake Thompson <flippmoke>"
   ],
   "dependencies": {
-    "minimist": "~1.2.6",
-    "progress-stream": "~0.5.x",
-    "@mapbox/sphericalmercator": "~1.0.1",
-    "queue-async": "~1.0.7"
+    "minimist": "~1.2.8",
+    "progress-stream": "~2.0.0",
+    "@mapbox/sphericalmercator": "~1.2.0",
+    "d3-queue": "~3.0.7"
   },
   "devDependencies": {
-    "@mapbox/mbtiles": "^0.10.0",
-    "@mapbox/tilejson": "~1.0.4",
-    "concat-stream": "1.4.x",
-    "coveralls": "~2.11.1",
-    "eslint": "^0.24.0",
-    "istanbul": "~0.3.0",
+    "@mapbox/mbtiles": "^0.12.1",
+    "@mapbox/tilejson": "~1.1.0",
+    "concat-stream": "2.0.0",
+    "coveralls": "~3.1.1",
+    "eslint": "^8.52.0",
     "stream-combiner": "^0.2.2",
-    "tape": "2.13.3"
+    "tape": "5.7.2"
   },
   "bin": {
     "tilelive-copy": "./bin/tilelive-copy"
@@ -55,6 +54,5 @@
   },
   "scripts": {
     "test": "eslint --no-eslintrc -c .eslintrc lib/*.js && tape test/*.test.js",
-    "cov": "istanbul cover tape test/*.test.js && coveralls < ./coverage/lcov.info"
   }
 }
